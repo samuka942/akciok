@@ -28,7 +28,7 @@ class file_overrite{
 		$this->f = str_replace("_ido_vege_",$vege,$this->f);
 	}
 	
-	public function Athen_arak_Setter($athenba="€19",$athenbol="€41"){
+	public function Athen_arak_Setter($athenba,$athenbol){
 		$this->f = str_replace("_athenba_",$athenba,$this->f);
 		$this->f = str_replace("_athenbol_",$athenbol,$this->f);
 	}
