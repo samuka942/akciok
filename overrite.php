@@ -33,6 +33,14 @@ class file_overrite{
 		$this->f = str_replace("_athenbol_",$athenbol,$this->f);
 	}
 	
+	public function article_saver(){
+		$saver_file = substr($this->file_name,0,stripos($this->file_name,"."))."_kesz.txt";
+		fopen($saver_file,"w");
+		if(file_put_contents($saver_file,$this->f)){
+			echo "A mentés sikeres!";
+		}
+	}
+	
 }
 
 ?>
