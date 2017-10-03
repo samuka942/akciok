@@ -2,12 +2,16 @@
 
 class file_overrite(){
 	
-	private $f;
+	private $file_name;
 	private $hatarido;
 	private $eleje;
 	private $vege;
 	private $athenba;
 	private $athenbol;
+	
+	public function file_setter($file_name){
+		$f = file_get_contents($file_name);
+	}
 	
 	
 	public function Hatarido_Setter($hatarido){
